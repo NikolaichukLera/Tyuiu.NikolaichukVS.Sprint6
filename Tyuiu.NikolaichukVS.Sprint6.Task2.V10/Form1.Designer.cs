@@ -30,9 +30,9 @@ namespace Tyuiu.NikolaichukVS.Sprint6.Task2.V10
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxCondition_NVS = new System.Windows.Forms.GroupBox();
             this.groupBoxCond_NVS = new System.Windows.Forms.GroupBox();
             this.groupBoxInPut_NVS = new System.Windows.Forms.GroupBox();
@@ -44,18 +44,18 @@ namespace Tyuiu.NikolaichukVS.Sprint6.Task2.V10
             this.buttonDone_NVS = new System.Windows.Forms.Button();
             this.groupBoxOutPut_NVS = new System.Windows.Forms.GroupBox();
             this.groupBoxResult_NVS = new System.Windows.Forms.GroupBox();
+            this.chartGraf_NVS = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewResult_NVS = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnX_NVS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chartGraf_NVS = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBoxCondition_NVS.SuspendLayout();
             this.groupBoxInPut_NVS.SuspendLayout();
             this.groupBoxStop_NVS.SuspendLayout();
             this.groupBoxStart_NVS.SuspendLayout();
             this.groupBoxOutPut_NVS.SuspendLayout();
             this.groupBoxResult_NVS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_NVS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGraf_NVS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_NVS)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxCondition_NVS
@@ -169,6 +169,24 @@ namespace Tyuiu.NikolaichukVS.Sprint6.Task2.V10
             this.groupBoxResult_NVS.TabStop = false;
             this.groupBoxResult_NVS.Text = "Результат:";
             // 
+            // chartGraf_NVS
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartGraf_NVS.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartGraf_NVS.Legends.Add(legend1);
+            this.chartGraf_NVS.Location = new System.Drawing.Point(158, 21);
+            this.chartGraf_NVS.Name = "chartGraf_NVS";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Legent1 - Empty";
+            this.chartGraf_NVS.Series.Add(series1);
+            this.chartGraf_NVS.Size = new System.Drawing.Size(325, 355);
+            this.chartGraf_NVS.TabIndex = 1;
+            this.chartGraf_NVS.Text = "chart1";
+            // 
             // dataGridViewResult_NVS
             // 
             this.dataGridViewResult_NVS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -186,32 +204,16 @@ namespace Tyuiu.NikolaichukVS.Sprint6.Task2.V10
             // X
             // 
             this.X.HeaderText = "X";
+            this.X.MinimumWidth = 6;
             this.X.Name = "X";
             this.X.Width = 50;
             // 
             // ColumnX_NVS
             // 
             this.ColumnX_NVS.HeaderText = "F(x)";
+            this.ColumnX_NVS.MinimumWidth = 6;
             this.ColumnX_NVS.Name = "ColumnX_NVS";
             this.ColumnX_NVS.Width = 50;
-            // 
-            // chartGraf_NVS
-            // 
-            chartArea5.Name = "ChartArea1";
-            this.chartGraf_NVS.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartGraf_NVS.Legends.Add(legend5);
-            this.chartGraf_NVS.Location = new System.Drawing.Point(158, 21);
-            this.chartGraf_NVS.Name = "chartGraf_NVS";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.IsVisibleInLegend = false;
-            series5.Legend = "Legend1";
-            series5.Name = "Legent1 - Empty";
-            this.chartGraf_NVS.Series.Add(series5);
-            this.chartGraf_NVS.Size = new System.Drawing.Size(325, 355);
-            this.chartGraf_NVS.TabIndex = 1;
-            this.chartGraf_NVS.Text = "chart1";
             // 
             // Form1
             // 
@@ -233,8 +235,8 @@ namespace Tyuiu.NikolaichukVS.Sprint6.Task2.V10
             this.groupBoxStart_NVS.PerformLayout();
             this.groupBoxOutPut_NVS.ResumeLayout(false);
             this.groupBoxResult_NVS.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_NVS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGraf_NVS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_NVS)).EndInit();
             this.ResumeLayout(false);
 
         }

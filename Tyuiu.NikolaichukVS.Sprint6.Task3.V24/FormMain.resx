@@ -117,13 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="groupBoxCond_NVS.Text" xml:space="preserve">
-    <value>Написать программу, которая выводит таблицу значений функции: F(x) = 2 * x - 4 + 2* x - 1/ sin(x) + 1. ( произвести табулирование) f(x)  на заданном диапазоне [-5;5] с шагом 1. Произвести проверку деления на ноль. Значения занести в DataGridView/ Значения округлить до двух знаков после запятой. </value>
+  <data name="textBoxCondition_NVS.Text" xml:space="preserve">
+    <value>Дан массив 5 на 5 элементов. 
+-17    -6   10      5    3
+-10  -14   10    -7   -3
+-19     9     8   -17  -9
+-19    -5   -9   -18  14
+ 17    12   11    12    2
+ Заменить чётные значения во второй строке на 0. Результат вывести в DataGridView.</value>
   </data>
-  <metadata name="X.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ColumnX_NVS.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
