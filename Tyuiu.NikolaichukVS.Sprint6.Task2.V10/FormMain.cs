@@ -11,9 +11,9 @@ using Tyuiu.NikolaichukVS.Sprint6.Task2.V10.Lib;
 
 namespace Tyuiu.NikolaichukVS.Sprint6.Task2.V10
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
